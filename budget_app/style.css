@@ -1,0 +1,194 @@
+body{
+    text-align: center;
+    
+}
+.contenu{
+    padding: 0;
+    margin: 0;
+    border: solid 2px;
+    text-align: center;
+color: white;
+    background-color: rgba(12, 12, 197, 0.5);
+   
+}
+h1{
+  background: #070f4e;
+  color: white;
+  padding: 10px;
+  border-radius:  40px;
+}
+label{
+  color: rgba(12, 12, 197, 0.5);
+  margin-bottom:10px ;
+  margin-left: 0px;
+  font-size: 20px;
+}
+p{
+    
+    color: rgb(231, 27, 27);
+}
+.valeur{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 300px 50px 300px;
+}
+.symbolSolde{
+  color: green;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 50px 0px 50px 0px;
+  padding: 10px;
+  margin: 5px;
+}
+.symbolDepense{
+  color: red;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 50px 0px 50px 0px;
+  padding: 10px;
+  margin: 5px;
+}
+.symbolRevenu{
+  color: #070f4e;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 50px 0px 50px 0px;
+  padding: 10px;
+  margin: 5px;
+}
+li{
+  color: #070f4e;
+  font-size: 20px;
+  text-decoration: none;
+}
+li.minus {
+  background-color: rgb(236, 91, 91);
+}
+.revenu, .depense,.solde{
+  background-color: #070f4e;
+  border-radius: 50px 0px 50px 0px;
+}
+.revenu h3, .depense h3,.solde h3{
+  border-radius: 20px;
+  background-color: #070f4e;
+  color:white;
+  border-radius: 50px 0px 50px 0px;
+  padding: 10px;
+}
+h3{
+    justify-content: space-between;
+}
+button{
+  margin-top: 10px;
+}
+#valid-revenu, #valid-depense{
+  border-radius: 20px;
+    background-color: rgba(12, 12, 197, 0.5);
+  color: white;
+}
+input,#modal-btnR, #modal-btn{
+  border-radius: 10px;
+}
+.posi{
+  display: flex;
+    justify-content: space-between;
+}
+.img{
+  margin-left: 100px;
+  border-radius: 50px  ;
+  border-color: rgba(12, 12, 197, 0.5);
+}
+.inp{
+  margin-right: 100px;
+  margin-top: 20px;
+}
+#modal-btn{
+  display: none;
+}
+.modal, .modalR {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(12, 12, 197, 0.5);
+  }
+  .modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header h2,
+  .modal-footer h3 {
+    margin: 0;
+  }
+  
+  .modal-header {
+    /* background: var(--modal-color); */
+    background-color:linear-gradient( left top red,black,blue);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background: #fff;
+  }
+  
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .close, .closeR {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus,
+  .closeR:hover,
+  .closeR:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  @media  screen and (max-width: 767px) {
+    .posi{
+      display: inline;
+    }
+    .img, .inp{
+      width: 100%;
+      height: auto;
+justify-content: center;
+margin: 0px;
+    }
+    .valeur{
+      display: inline;
+    }
+  }
